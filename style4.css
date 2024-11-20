@@ -1,0 +1,103 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Ocupa toda a altura */
+    width: 100%; /* Ocupa toda a largura */
+    background-color: #121212; 
+    font-family: 'Press Start 2P', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    width: 80%; /* Adapta ao tamanho da tela */
+    max-width: 400px; /* Reduz o tamanho máximo */
+    background-color: #242424; 
+    border-radius: 15px;
+    padding: 15px; /* Reduz espaço interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); 
+}
+
+h1 {
+    margin-bottom: 15px; /* Reduz margem inferior */
+    font-size: 1.5rem; /* Texto menor */
+    color: #00bcd4;
+    text-shadow: 0 0 8px #00bcd4, 0 0 15px #00bcd4;
+    text-transform: uppercase;
+}
+
+#status-jogo {
+    margin: 10px 0;
+    font-size: 1rem; /* Texto menor */
+    color: #6e1b45; 
+    text-shadow: 0 0 8px #ff69b4, 0 0 15px #ff69b4;
+}
+
+#voltar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10; /* Garante que fique sempre visível */
+}
+.tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+    grid-template-rows: repeat(5, 1fr); /* 5 linhas */
+    gap: 4px;
+    width: 100%;
+    max-width: 350px;
+    aspect-ratio: 4 / 5; /* Proporção ajustada para 5 linhas */
+}
+
+
+
+.quadrado {
+    background-color: #222;
+    border: 2px solid #444; 
+    font-size: 1.2rem; /* Texto menor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s ease;
+}
+
+.quadrado:hover {
+    border-color: #00bcd4; 
+    box-shadow: 0 0 8px #00bcd4, 0 0 15px #00bcd4;
+}
+
+.quadrado.tomada {
+    pointer-events: none;
+}
+
+button {
+    padding: 8px 16px; /* Botões menores */
+    background-color: #1c1c1c; 
+    border: 2px solid #00bcd4; 
+    color: #00bcd4; 
+    font-size: 1rem; /* Texto menor */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px; /* Margem reduzida */
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #00bcd4;
+    color: black;
+    box-shadow: 0 0 8px #00bcd4, 0 0 15px #00bcd4;
+}
+
+button:active {
+    transform: scale(0.95); /* Efeito de pressionar o botão */
+}

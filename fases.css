@@ -1,0 +1,86 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', sans-serif;
+    background-color: #161616; 
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 18px;
+}
+
+.menu-container {
+    width: 70%; /* Agora ocupa 70% da largura da tela */
+    max-width: 800px; /* Limite de largura máxima */
+    height: 80%; /* Agora ocupa 80% da altura da tela */
+    max-height: 600px; /* Limite de altura máxima */
+    text-align: center;
+    background-color: #1b1b1b; 
+    padding: 30px; /* Ajuste do espaçamento interno */
+    box-sizing: border-box; /* Inclui borda e padding no tamanho total */
+    border-radius: 15px; /* Bordas arredondadas */
+    border: 4px solid #00bcd4; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.8);
+}
+
+
+h1 {
+    font-size: 80px; 
+    margin-bottom: 30px;
+    color: #00bcd4; 
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4; 
+}
+
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Reduz o espaço entre os botões */
+}
+a {
+    text-decoration: none;
+    color: inherit;
+ }
+ .creditos{
+   text-transform: uppercase;
+ }
+ .botao {
+    padding: 20px 40px; /* Reduz o preenchimento interno */
+    font-size: 24px; /* Reduz o tamanho da fonte */
+    cursor: pointer;
+    border: none;
+    background-color: rgb(38, 37, 37);
+    color: white;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+.botao:hover {
+    background-color: #00bcd4; 
+    color: #121212; 
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.botao:focus {
+    outline: none;
+}
+#voltar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10; /* Garante que fique sempre visível */
+}

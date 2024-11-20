@@ -1,0 +1,86 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Minecraft', sans-serif;  /* Fonte Minecraft */
+    background-color: #121212; /* Fundo escuro */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.container {
+    text-align: center;
+    background-color: #1c1c1c; /* Fundo escuro, quase preto */
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.8);
+    border: 4px solid #00bcd4; /* Borda em azul neon */
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 60px; /* Título grande */
+    margin-bottom: 30px;
+    color: #00bcd4; /* Azul neon */
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4; /* Efeito de luz neon */
+}
+
+.texto {
+    text-align: left;
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+.texto p {
+    margin-bottom: 15px;
+}
+
+.texto ul {
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.texto ul li {
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #00bcd4; /* Azul neon para os nomes */
+}
+
+.botao {
+    padding: 20px 60px;
+    font-size: 32px;
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    font-family: 'Minecraft', sans-serif;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.botao:hover {
+    background-color: #00bcd4;
+    color: #121212;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.botao:focus {
+    outline: none;
+}
